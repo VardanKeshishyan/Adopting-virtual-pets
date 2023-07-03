@@ -10,9 +10,13 @@ The program maintains a record of the adopted pets and allows the user to view t
 What did I use
 
 Class and Object
+
 Encapsulation
+
 Inheritance
+
 Polymorphism
+
 Pointers, etc.
 
 
