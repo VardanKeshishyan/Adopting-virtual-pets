@@ -7,5 +7,13 @@ After adopting one or more pets, the user can access a pet processing menu. This
 
 The program maintains a record of the adopted pets and allows the user to view their details or perform further actions. It simulates the adoption and management of virtual pets, providing a simple and interactive experience.
 
+What did I use
+
+Class and Object
+Encapsulation
+Inheritance
+Polymorphism
+Pointers, etc.
+
 
 ![image](https://github.com/VardanKeshishyan/Adopting-virtual-pets/assets/138354187/1b648dbb-0079-4b3c-a599-4e756bc0b26e)
