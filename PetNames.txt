@@ -1,0 +1,5 @@
+
+PET's type:  Dog
+PET's name:  j
+PET's type:  Cat
+PET's name:  hhj
