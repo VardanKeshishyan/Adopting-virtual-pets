@@ -6,3 +6,6 @@ Once the user selects a pet type, they are asked to provide the name and color o
 After adopting one or more pets, the user can access a pet processing menu. This menu provides options to print all the pet information or print a list of the pet names. Additionally, the user can choose to quit the program.
 
 The program maintains a record of the adopted pets and allows the user to view their details or perform further actions. It simulates the adoption and management of virtual pets, providing a simple and interactive experience.
+
+
+![image](https://github.com/VardanKeshishyan/Adopting-virtual-pets/assets/138354187/1b648dbb-0079-4b3c-a599-4e756bc0b26e)
