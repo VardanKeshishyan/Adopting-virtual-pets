@@ -30,14 +30,14 @@ int main()
     fileName.open(file.c_str());
     vector<VirtualPet*> petArr;
     VirtualPet* petArrs[S];
-    char selection = 'no';
+    char selection = 'n';
 
- 
+
     while (selection != 'Q' && selection != 'q') {
-        selection='0';
+        selection = '0';
         cout << endl << endl << endl;
         petArrs[S - 4]->printMain();
-        cin>>selection;
+        cin >> selection;
         switch (selection)
         {
         case '1':
@@ -56,7 +56,7 @@ int main()
             Type = "Fish";
             petArrs[3]->printChose(Type, patName, patColor);
             {Fish* fish = new Fish(patName, patColor);
-            petArr.push_back(fish);}
+            petArr.push_back(fish); }
             break;
         case '4':
             Type = "Hamster";
@@ -79,7 +79,7 @@ int main()
         }
 
     }
-    
+
 
 
     if (!petArr.empty()) {
@@ -97,47 +97,47 @@ int main()
 
     }
 
-    selection = 'no';
+    selection = 'n';
 
-   // string copy2;
-    
+    // string copy2;
+
     while (selection != 'Q' && selection != 'q') {
-            selection = 'no';
-            cout << endl << endl;
-            cout <<"PET PROCESSING MENU"<<endl;
-            cout <<"1. Print all Pet info"<<endl;
-            cout <<"2. Print PetNames.txt"<<endl;
-            cout <<"Q. Quit"<<endl;
-            cout<<"Make A Selection: ";
-            //cout << "**************" << VirtualList.size() << endl;
-            cin>>selection;
+        selection = 'n';
+        cout << endl << endl;
+        cout << "PET PROCESSING MENU" << endl;
+        cout << "1. Print all Pet info" << endl;
+        cout << "2. Print PetNames.txt" << endl;
+        cout << "Q. Quit" << endl;
+        cout << "Make A Selection: ";
+        //cout << "**************" << VirtualList.size() << endl;
+        cin >> selection;
 
-            switch (selection)
+        switch (selection)
+        {
+        case '1':
+            for (int i = 0; i < petArr.size(); i++)
             {
-            case '1':
-                for (int i = 0; i < petArr.size(); i++)
-                {
-                    petArr.at(i)->changeMood();
-                    petArr.at(i)->printInfo("print");
-                }
-                break;
-            case '2':
-                cout << endl;
-                cout << "\nPETS: " << endl;
-                cout << "_________________" << endl;
-                while (getline(fileName, copy)) {
-                    cout << copy << endl;
-                    cout << endl;
-                }
-                break;
-            default:
-                cout << "\nInvalid choice, please try again" << endl; //exception handling
-  
+                petArr.at(i)->changeMood();
+                petArr.at(i)->printInfo("print");
             }
-            
+            break;
+        case '2':
+            cout << endl;
+            cout << "\nPETS: " << endl;
+            cout << "_________________" << endl;
+            while (getline(fileName, copy)) {
+                cout << copy << endl;
+                cout << endl;
+            }
+            break;
+        default:
+            cout << "\nInvalid choice, please try again" << endl; //exception handling
+
         }
 
-        fileName.close();
-   
+    }
+
+    fileName.close();
+
     return 0;
 }
